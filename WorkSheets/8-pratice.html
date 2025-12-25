@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    product = {
+      name: 'basketball',
+      price: 2095,
+      compare: function comparePrice(obj1, obj2){
+        if(obj1.price < obj2.price){
+          console.log('Product1 is Less expensive');
+        }
+        else if (obj1.price > obj2.price){
+          console.log('Product2 is Less expensive');
+        }
+        else {
+          console.log('Both have same price');
+        }
+      },
+
+      // can be write as this checkValue : function sameValue(){...}
+      sameValue(obj1, obj2){
+        if(obj1.name == obj2.name && obj1.price == obj2.price){
+          console.log('Both are same');
+        }
+        else{
+          console.log('Not Same');
+        }
+      }
+    };
+
+    //8b
+    console.log(product);
+    product.price += 500;
+    console.log(product.price);
+
+    //8c
+    product['delivery-time'] = '3days';
+    console.log(product);
+
+    // 8d
+    product1 = {
+      name: 'basketball',
+      price: 1005
+    };
+    product2 = {
+      name: 'basketball',
+      price: 1050
+    };
+
+    product.compare(product1, product2);
+
+    //8e
+    product.sameValue(product1, product2);
+
+    //8f
+    console.log('Hello WorldI'.toLowerCase());
+    console.log('Hello World'.toUpperCase());
+
+    //8g
+    console.log('HOO'.toLowerCase().repeat(3));
+
+  </script>
+</body>
+</html>
