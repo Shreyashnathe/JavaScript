@@ -11,12 +11,18 @@
 <body>
   
   <p>Todo List Practice 1</p>
-  <input type="text" class="input-box" placeholder="Todo name">
-  <button class="add-button">Add</button>
+  <input placeholder="Todo name" class="js-name-input">
+  <button onclick="
+    addTodo();
+  ">Add</button>
   
+  <!-- Display the Array on the bottom of Input Box -->
+  <p class="js-display-list"></p>
+
+
 
   <p>Todo List Practice 2</p>
-  <input type="text" class="input-box" placeholder="Todo name">
+  <input placeholder="Todo name">
   <button class="add-button">Add</button>
 
   <script src="script/11.1-toDoList.js"></script>
